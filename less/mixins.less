@@ -1,11 +1,16 @@
 // Mixins Here
+.mobilespacing(){
+    margin:0 auto;
+    width:100%;
+    padding: 1rem 2rem 0rem;
+}
 
-.custom-button(){
+.custom-button(@buttonbgcolor, @buttontextcolor){
     display:flex;
     align-items: center;
     justify-content: center;
-    background-color: @btn-bg-color;
-    color: @porcelain;
+    background-color: @buttonbgcolor;
+    color: @buttontextcolor;
     font-size: 1.8rem;
     width:105px;
     height:35px;
@@ -13,7 +18,7 @@
     cursor: pointer;
 
     &:hover {
-        background-color: @porcelain;
-        color: @btn-bg-color;
+        background-color: @buttontextcolor;
+        color: @buttonbgcolor;
     }
 }
