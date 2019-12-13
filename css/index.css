@@ -183,8 +183,14 @@ nav .navigation {
 }
 nav .navigation a {
   font-size: 1.8rem;
-  font-color: #454A59;
+  color: #454A59;
   text-decoration: none;
+  border: 5px solid blue;
+}
+@media (max-width: 500px) {
+  nav .navigation a {
+    border: 5px solid red;
+  }
 }
 footer {
   color: #22283B;
@@ -248,6 +254,11 @@ footer {
   width: 105px;
   height: 35px;
   border-radius: 5px;
+  cursor: pointer;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: #F6F7F8;
+  color: #22283A;
 }
 .home .walk .walk-img {
   width: 46%;
